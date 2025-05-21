@@ -13,3 +13,4 @@
 3. Activate: `source .venv/bin/activate` (macOS/Linux) or `.venv\Scripts\activate` (Windows)
 4. Install: `pip install -r requirements.txt`
 
+[StreamLit App](https://moonlight-energy-soln.streamlit.app/)
