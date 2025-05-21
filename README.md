@@ -5,7 +5,6 @@
 - **Project Structure:** Includes a `requirements.txt` for managing dependencies and uses virtual environments for clean Python setups.
 - **CI/CD Practice:** Intended for integrating with continuous integration and deployment pipelines (you can expand this section if you add GitHub Actions or similar workflows).
 - **Jupyter Notebooks:** Suitable for data exploration, analysis, or documentation in notebook format.
-- **Learning Focus:** Emphasizes collaborative coding, best practices, and the fundamentals of working in a team-based software project.
 
 ## Setup
 
