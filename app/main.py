@@ -6,7 +6,7 @@ from utils import load_country_data, get_top_days
 
 # Config - Faster rendering
 st.set_page_config(
-    page_title="🌞 Solar Dashboard",
+    page_title="Solar Dashboard",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -30,7 +30,7 @@ if df.empty:
     st.stop()
 
 # 1. First show key metrics immediately
-st.title(f"☀️ {selected_country} Solar Performance")
+st.title(f"{selected_country} Solar Performance")
 col1, col2, col3 = st.columns(3)
 col1.metric("Avg GHI", f"{df['GHI'].mean():.1f} W/m²")
 col2.metric("Peak Temp", f"{df['Tamb'].max():.1f}°C")
@@ -78,7 +78,7 @@ with tab2:
         st.plotly_chart(fig, use_container_width=True)
 
 # 3. Show top days last (least critical)
-with st.expander("🏆 Top Performing Days"):
+with st.expander("Top Performing Days"):
     top_days = get_top_days(df)
     if not top_days.empty:
         st.dataframe(
