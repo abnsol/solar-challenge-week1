@@ -4,7 +4,7 @@ import streamlit as st
 import os
 from datetime import datetime
 
-DATA_DIR = "data"
+DATA_DIR = "./data"
 
 @st.cache_data(ttl=3600, show_spinner=False)  # Faster caching
 def load_country_data(country_name):
